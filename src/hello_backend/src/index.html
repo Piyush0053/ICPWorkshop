@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX - Explore Beyond</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: radial-gradient(circle, #0b0d17 0%, #010409 100%);
+            color: white;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header img {
+            width: 150px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('https://www.spacex.com/static/images/backgrounds/mars.webp') no-repeat center center/cover;
+            animation: flash-bg 10s infinite alternate;
+        }
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 0 0 20px #ffcc00;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .hero button {
+            background: linear-gradient(90deg, #ffcc00, #ff6600);
+            border: none;
+            padding: 15px 30px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+        .hero button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(90deg, #ff6600, #ffcc00);
+        }
+        @keyframes flash-bg {
+            0% {
+                filter: brightness(1);
+            }
+            100% {
+                filter: brightness(1.3);
+            }
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #0b0d17, #02030a);
+        }
+        .features .card {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 15px;
+            padding: 20px;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .features .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+        }
+        .features img {
+            width: 80px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/SpaceX-Logo.svg/2560px-SpaceX-Logo.svg.png" alt="SpaceX Logo">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#missions">Missions</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Exploring Beyond</h1>
+        <p>Join SpaceX on our journey to explore the universe and make life multi-planetary.</p>
+        <button>Learn More</button>
+    </div>
+
+    <section class="features">
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/4201/4201973.png" alt="Rocket">
+            <h3>Revolutionary Rockets</h3>
+            <p>Reusable technology reducing the cost of space exploration.</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/4214/4214684.png" alt="Satellite">
+            <h3>Starlink Satellites</h3>
+            <p>Connecting the globe with high-speed internet.</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1213/1213264.png" alt="Planet">
+            <h3>Mars Colonization</h3>
+            <p>Making humanity a multiplanetary species.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 SpaceX. All rights reserved.</p>
+    </footer>
+</body>
+</html>
